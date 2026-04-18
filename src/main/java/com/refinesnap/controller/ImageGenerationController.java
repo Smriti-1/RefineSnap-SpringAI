@@ -32,24 +32,5 @@ public class ImageGenerationController {
         }
     }
 
-//    @PostMapping("/edit")
-//    public ResponseEntity<?> editPhoto( @RequestParam("image") MultipartFile image, @RequestParam("prompt") String prompt) {
 
-//        try {
-//            String result = imageService.editImage(image, prompt);
-//            return ResponseEntity.ok(Map.of("result", result));
-//        } catch (NonTransientAiException e) {
-//            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-//                    .body(Map.of(
-//                            "error", "Invalid image format",
-//                            "details", e.getMessage()
-//                    ));
-//        } catch (IOException e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-//                    .body(Map.of("error", "Failed to process image"));
-//        } catch (Exception e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-//                    .body(Map.of("error", e.getMessage()));
-//        }
-//    }
 }
