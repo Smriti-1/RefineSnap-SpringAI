@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RefineSnap</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎨 RefineSnap</h1>
+    <p class="subtitle">Turn your ideas into beautiful images ✨</p>
+
+    <!-- Generate Image -->
+    <div class="card">
+        <h3>Generate Image</h3>
+
+        <input id="generatePrompt" placeholder="Describe your image..." type="text"/>
+
+        <button id="generateBtn">✨ Generate</button>
+
+        <div class="loader" id="generateLoader">Generating magic...</div>
+    </div>
+
+<!--    <div class="card result-card">-->
+        <div class="result" id="generateResult"></div>
+<!--    </div>-->
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
